@@ -1,0 +1,150 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Center content vertically */
+  align-items: center;
+  /* Center content horizontally */
+  min-height: 100vh;
+  /* Ensure the div takes the full viewport height */
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  /* Ensure the container takes up the full width */
+  box-sizing: border-box;
+  /* Include padding in width calculations */
+  overflow-x: hidden;
+  /* Hide horizontal overflow */
+}
+
+
+.home-img-container {
+  padding-top: 70px;
+  /* Add enough padding to account for the fixed navbar height */
+  background: linear-gradient(to bottom right, #d4ed91, #fff9c4);
+  width: 100vw;
+  /* Use viewport width to cover the full width */
+  position: relative;
+  /* Make it relative to the parent container */
+
+  margin-left: -50vw;
+  /* Compensate for the shift to the left */
+  margin-right: -50vw;
+  /* Compensate for the shift to the right */
+  overflow: hidden;
+  /* Prevent overflow */
+}
+
+.home-container img {
+  width: 100%;
+  /* Make the image responsive */
+  height: auto;
+  /* Keep the aspect ratio */
+  /* Set a maximum width for the image */
+  object-fit: contain;
+  /* Ensure the image fits without distortion */
+}
+
+.container {
+  display: flex;
+  /* Use Flexbox for layout */
+  justify-content: space-between;
+  /* Space between the left and right divs */
+  align-items: flex-start;
+  /* Align items to the top */
+  background-color: #d3d3d3;
+  /* Light grey background */
+  padding: 20px;
+  /* Add some padding around the container */
+  width: 100%;
+  /* Set the width to 100% */
+  max-width: 100%;
+  /* Ensure the maximum width is 100% */
+  margin: 0px 30px;
+  /* Set margin on the top and bottom, and left and right */
+  font-size: 16px;
+  /* Adjust font size as necessary */
+  line-height: 2;
+  /* Increase line height for readability */
+  color: #333;
+  /* Text color */
+  word-wrap: break-word;
+  /* Allow long words to break */
+}
+
+.separator {
+  width: 120%;
+  height: 50px;
+  /* Adjust height as needed */
+  background: repeating-linear-gradient(45deg,
+      #00FF00,
+      /* Green */
+      #00FF00 10px,
+      #FFFF00 10px,
+      #FFFF00 20px,
+      #FFFFFF 20px,
+      #FFFFFF 30px);
+  margin: 0;
+  /* Remove any default margins */
+  padding: 0;
+}
+
+
+.left-div {
+  flex: 1;
+  /* Allow both divs to grow equally */
+  margin: -90px 80px 80px;
+  /* Adjust top margin to move up */
+  padding: 20px;
+  /* Add padding inside each div */
+  text-align: center;
+  /* Center text inside the div */
+
+}
+
+
+.right-div {
+  flex: 1;
+  /* Allow both divs to grow equally */
+  margin: -90px 80px 80px;
+  /* Adjust top margin to move up */
+  padding: 20px;
+  /* Add padding inside each div */
+  text-align: center;
+
+}
+
+.left-div img {
+  width: 200px;
+  /* Set the desired width */
+  height: 200px;
+  /* Set the same value for height to maintain the circular shape */
+  object-fit: cover;
+  /* Ensures the image fits well within the set dimensions */
+  border-radius: 50%;
+  /* Ensures the image remains circular */
+}
+
+.right-div img {
+  width: 200px;
+  /* Set the desired width */
+  height: 200px;
+  /* Set the same value for height to maintain the circular shape */
+  object-fit: cover;
+  /* Ensures the image fits well within the set dimensions */
+  border-radius: 50%;
+  /* Ensures the image remains circular */
+}
+
+/* Reduce sizes of h2 and p elements */
+.left-div h2,
+.right-div h2 {
+  font-size: 18px;
+  /* Reduced font size for h2 */
+}
+
+.left-div p,
+.right-div p {
+  font-size: 14px;
+  /* Reduced font size for p */
+}
