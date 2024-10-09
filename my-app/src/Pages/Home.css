@@ -8,7 +8,7 @@
   min-height: 100vh;
   /* Ensure the div takes the full viewport height */
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   width: 100%;
   /* Ensure the container takes up the full width */
   box-sizing: border-box;
@@ -148,3 +148,92 @@
   font-size: 14px;
   /* Reduced font size for p */
 }
+
+
+
+.social-container {
+  
+  background: linear-gradient(to bottom right, #d4ed91, #fff9c4);
+  display: flex;
+  width: 100vw; /* Use viewport width to cover entire page width */
+  padding: 60px;
+  margin: 0 auto;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
+  
+}
+
+
+
+.social-left-div {
+  flex: 2;
+  /* or use width: 75%; */
+  max-width: 70%;
+  padding: 0px;
+
+}
+
+.social-right-div {
+  flex: 1;
+  /* or use width: 25%; */
+  max-width: 25%;
+  padding: 0px;
+
+}
+
+
+
+.text-phrases {
+  margin-top: 20px; /* Space above the phrases */
+  line-height: 0.2; /* Spacing between lines */
+}
+.phrase-internet {
+  font-size: 40px; /* Adjust the size as needed */
+  color: blue; /* Color for "Internet" */
+  font-weight: bold;
+}
+
+.phrase-every-home {
+  font-size: 40px; /* Adjust the size as needed */
+  color: orange; /* Color for "every home" */
+  font-weight: bold;
+}
+.phrase-africa {
+  font-size: 40px; /* Adjust the size as needed */
+  color: purple; /* Color for "Africa" */
+  font-weight: bold;
+}
+
+.text-phrase p {
+  font-size: 17px; /* Adjust the size as needed */
+  font-weight: bold; /* Use bold font weight */
+  
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-top: 15px; /* Margin above the icons */
+  justify-content: flex-end; /* Align icons to the right */
+}
+
+.social-link p {
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold; /* Make text bold */
+  margin-bottom: 10px; /* Space between the text and icons */
+  justify-content: flex-end; /* Align icons to the right */
+}
+
+.social-links a {
+  font-size: 24px; /* Size of the icons */
+  color: #333; /* Color of the icons */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth color transition */
+  margin: 10px; /* Space between icons */
+}
+
+.social-links a:hover {
+  color: #007bff; /* Color on hover */
+}
+

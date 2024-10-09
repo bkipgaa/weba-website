@@ -8,6 +8,9 @@ import Home from './Pages/Home';
 import Coverage from './Pages/Coverage'
 import Careers from './Pages/Careers'
 import Internet_Status from './Pages/Internet_Status';
+// Import the Font Awesome CSS
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function App() {
   return (
