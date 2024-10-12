@@ -1,0 +1,192 @@
+/* Apply a gradient background to the main-div and make it fill the viewport */
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh; /* Make it take up the full viewport height */
+    width: 100vw; /* Make it take up the full viewport width */
+    text-align: center;
+    
+    overflow: hidden;
+    background: linear-gradient(135deg, #a8e063, #4caf50); /* Green gradient background */
+    
+}
+
+/* Center and style content within the main-div */
+.about-poa-container {
+    display: flex;
+    background-image: url();
+    background-size: cover; 
+    background-position: center;
+  background-repeat: no-repeat; /* Ensures the image does not repeat */
+  background-attachment: fixed; /* Keeps image fixed during scroll */
+  z-index: 1;
+  image-rendering: crisp-edges; /* For sharper display */
+  height: 70vh;
+  padding: 80px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    padding-left: 80px;
+    width: 100%;
+}
+
+.about-poa-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(100, 200, 100, 0.8), rgba(34, 139, 34, 0.8));
+    z-index: 1;
+    opacity: 0.7;
+  }
+
+/* Large, bold, italic heading */
+.main-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: yellow;
+    z-index: 2;
+}
+
+/* Slightly smaller heading */
+.sub-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+}
+
+/* Text content styling */
+.main-div p{
+    font-size: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 2;
+    color: white;
+}
+
+.separator {
+    width: 120%;
+    height: 50px;
+    /* Adjust height as needed */
+    background: repeating-linear-gradient(45deg,
+                  #800080,  /* Purple */
+                  #800080 10px,
+                  #FFFF00 10px, /* Yellow */
+                  #FFFF00 20px,
+                  #4B0082 20px, /* Indigo */
+                  #4B0082 30px,
+                  #7CFC00 30px, /* Light Green */
+                  #7CFC00 40px
+              );
+              border-radius: 10px;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Remove any default margins */
+    padding: 0;
+  }
+
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(135deg, #fff9c4, #fff59d); /* Light yellow gradient */
+    color: #333;
+  }
+
+  .promo h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+
+  .promo h2 {
+    font-size: 1.2em;
+  }
+  .promo img{
+    margin: -150px 8px 8px;
+    /* Adjust top margin to move up */
+    z-index: 2;
+    width: 200px;
+  /* Set the desired width */
+  height: 200px;
+  }
+
+  .container {
+    display: flex; /* Set flex layout */
+    background-color: linear-gradient(135deg, #a8e063, #4caf50);
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Full width of the parent */
+}
+
+.left-div {
+    flex: 1;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    width: 50%; /* Increase width */
+    height: 100vh;
+    background-color: #4caf50;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+.right-div {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: 50%;
+    
+}
+
+.left-div h1 {
+    font-size: 2em; /* Larger font size for main heading */
+    color: white; /* Green color */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Spacing below */
+    padding-top: 80px;
+    text-align: center; /* Centers subheading */
+    width: 50%;
+    
+}
+
+.left-div h2 {
+    font-size: 1.4em; /* Larger font size for main heading */
+    color: white; /* Green color */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 10px; /* Spacing below */
+    padding-top: 20px;
+    text-align: right; /* Centers subheading */
+    
+}
+
+/* Subheading */
+.right-div h2 {
+    font-size: 1em; /* Slightly smaller than the main heading */
+    color: #333; /* Darker color for contrast */
+    margin-bottom: 20px; /* Spacing below */
+    text-align: right; /* Align text to the left */
+    margin-left: 150px; /* Shift entire container to the right */
+
+}
+
+/* Paragraph */
+.left-div p {
+    font-size: 1em; /* Regular paragraph font size */
+    color: #555; /* Softer color for easier reading */
+    line-height: 1.6; /* Increases readability */
+    margin-left: 100px; /* Shift entire container to the right */
+    background-color: white;
+}

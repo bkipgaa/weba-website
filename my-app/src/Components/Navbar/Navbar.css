@@ -1,10 +1,10 @@
 .nav-container {
   width: 100%;
-  background-color: #333;
+  background: linear-gradient(135deg, #a8e063, #4caf50); 
   position: fixed; /* Fix the navbar to the top */
   top: 0;          /* Make sure it stays at the top of the page */
   z-index: 1000;   /* Ensure the navbar is above other elements */
-  margin-bottom: 10;
+  margin-bottom: 0;
 }
 
 .navbar {
@@ -34,3 +34,6 @@
   color: white;
   font-weight: bold;
 }
+
+
+
