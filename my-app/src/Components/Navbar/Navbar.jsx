@@ -26,7 +26,8 @@ const Navbar = () => {
         position: 'absolute', 
         top: '100%', 
         left: '20%', 
-        background: 'linear-gradient(135deg, #a8e063, #4caf50)',
+        background: '#228B22',
+
         padding: '10px 20px', 
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
         zIndex: '10' 
@@ -36,13 +37,13 @@ const Navbar = () => {
         <Link 
           style={{ 
             textDecoration: 'none', 
-            color: 'black', 
+            color: 'white', 
             padding: '5px 0', 
             display: 'block' 
           }}
           to='/products/poa-street'
-          onMouseEnter={(e) => e.target.style.color = 'blue'}
-          onMouseLeave={(e) => e.target.style.color = 'black'}
+          onMouseEnter={(e) => e.target.style.color = 'yellow'}
+          onMouseLeave={(e) => e.target.style.color = 'white'}
         >
           Poa Street
         </Link>
@@ -51,13 +52,13 @@ const Navbar = () => {
         <Link 
           style={{ 
             textDecoration: 'none', 
-            color: 'black', 
+            color: 'white', 
             padding: '5px 0', 
             display: 'block' 
           }}
            to='/products/poa-home'
-          onMouseEnter={(e) => e.target.style.color = 'blue'}
-          onMouseLeave={(e) => e.target.style.color = 'black'}
+          onMouseEnter={(e) => e.target.style.color = 'yellow'}
+          onMouseLeave={(e) => e.target.style.color = 'white'}
         >
           Poa Home
         </Link >

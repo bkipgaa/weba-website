@@ -15,7 +15,7 @@
   /* Include padding in width calculations */
   overflow-x: hidden;
   /* Hide horizontal overflow */
-  background: linear-gradient(135deg, #a8e063, #4caf50); 
+  background-color: #228B22;
   width: 100vw;
 }
 
@@ -23,7 +23,7 @@
 .home-img-container {
   padding-top: 70px;
   /* Add enough padding to account for the fixed navbar height */
-  background: linear-gradient(135deg, #a8e063, #4caf50); 
+  background-color: #228B22;
   width: 100vw;
   /* Use viewport width to cover the full width */
   position: relative;
@@ -54,7 +54,8 @@
   /* Space between the left and right divs */
   align-items: flex-start;
   /* Align items to the top */
-  background: linear-gradient(135deg, #fff9c4, #fff59d); /* Light yellow gradient */
+  background-color: #00b8a9;
+
   /* Light grey background */
   padding: 20px;
   /* Add some padding around the container */
@@ -68,7 +69,7 @@
   /* Adjust font size as necessary */
   line-height: 2;
   /* Increase line height for readability */
-  color: #333;
+  color: white;
   /* Text color */
   word-wrap: break-word;
   /* Allow long words to break */
@@ -104,7 +105,7 @@
   padding: 20px;
   /* Add padding inside each div */
   text-align: center;
-  color: black;
+  color: white;
   font-weight: bold;
 
 }
@@ -119,7 +120,7 @@
   /* Add padding inside each div */
   text-align: center;
   font-weight: bold;
-  color: black;
+  color: white;
 
 }
 
@@ -150,12 +151,18 @@
 .righte-div h2 {
   font-size: 18px;
   /* Reduced font size for h2 */
+  font-weight: bold;
 }
 
 .lefte-div p,
 .righte-div p {
   font-size: 14px;
   /* Reduced font size for p */
+  color: white;
+  font-weight: bold;
+  font-weight: bold;
+
+
 }
 
 
@@ -255,7 +262,7 @@
   width: 100%;
   max-width: 100%;
   margin: 0px 30px;
-  background: linear-gradient(135deg, #fff9c4, #fff59d); /* Light yellow gradient */
+  background-color: #00b8a9;
 }
 
 .word-box {
@@ -297,7 +304,7 @@
   align-items: center; /* Center items horizontally */
   justify-content: center; /* Center items vertically */
   padding: 40px; /* Adjust as necessary */
-  background: linear-gradient(135deg, #a8e063, #4caf50); /* Background color */
+  background-color: #228B22;
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
   color: white; /* Text color */
