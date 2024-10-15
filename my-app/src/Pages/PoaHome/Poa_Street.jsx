@@ -1,6 +1,7 @@
 import React from 'react'
 import webalogo from '../../Assets/weba-logo2.png'
 import'./Poa-Street.css'
+import poahomeimage from '../../Assets/webahomelogo.png'
 
 const Poa_Street = () => {
   return (
@@ -45,6 +46,103 @@ const Poa_Street = () => {
           more clients through online engagement.”</p>
         </div>
       </div>
+
+      <div class="word-container-street ">
+        <div class="word-box-street  box-green">New Lower
+          Install Price
+        </div>
+        <div class="word-box-street  box-yellow ">Expanding Across
+          Kenya Every Day</div>
+        <div class="word-box-street  box-orange">40,000+ FREE
+          Street Wi-Fi
+          Hotspots</div>
+        <div class="word-box-street  box-blue">Unrivaled Customer Support</div>
+        <div class="word-box-street  box-purple">No Data Caps,
+          No Slow Downs</div>
+        <div class="word-box-street  box-red">Home Internet
+          From Only
+          KES 1575 p/m or KES 450 p/w</div>
+      </div>
+      <div className="separator"></div>
+      <div class="promo-street">
+    <img src={poahomeimage} alt="" />
+    <h1>Unlimited home internet</h1>
+    <h1>From only KES 450 per week, 1575 per per month.</h1>
+    <h2>If you're not already a home internet customer then get
+       <br /> in touch with our team to find out how to get our 5Mbps<br />
+        uncapped internet connection for your home.<br />
+       And the great news is, you will now get installed for only <br />KES 2500!</h2>
+       <button class="get-back-home">Get Poa Home</button>
+  </div>
+  <div className="separator"></div>
+  <div class="main-container">
+<div class="navigation-container">
+    <h2>Navigation</h2>
+    <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Products</a></li>
+        <li><a href="#">About poa!</a></li>
+        <li><a href="#">Our Coverage</a></li>
+        <li><a href="#">Careers at poa!</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Online Security</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Website Privacy Notice</a></li>
+        <li><a href="#">Acceptable Use Policy</a></li>
+        <li><a href="#">Service T's & C's</a></li>
+        <li><a href="#">Website T's & C's</a></li>
+    </ul>
+</div>
+
+
+<div class="street-contact-container">
+<h2>Contact poa!</h2>
+    <div class="street-left-contact-column">
+        <p><strong>Support</strong></p>
+        <p>Email: <a href="mailto:support@poainternet.net">support@poainternet.net</a></p>
+        <p>Phone: 0730 762 762</p>
+    </div>
+    <div class="street-right-contact-column">
+        <p><strong>Sales</strong></p>
+        <p>Email: <a href="mailto:sales@poainternet.net">sales@poainternet.net</a></p>
+        <p>Phone: 0730 862 862</p>
+    </div>
+</div>
+
+
+
+<div class="social-containerr">
+    <div class="social-linkk">
+        <p>#beunlimited</p>
+    </div>
+    <div class="social-linkks">
+        <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://wa.me/your-whatsapp-number" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+
+</div>
+
+</div>
+
+
+<footer class="footer">
+    <p>Copyright © 2024 - All Rights Reserved</p>
+</footer>
+
 
     </div>
   )

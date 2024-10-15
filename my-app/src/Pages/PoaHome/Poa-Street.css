@@ -224,3 +224,235 @@
     margin-left: 150px;
   }
   
+
+  
+.word-container-street {
+    display: flex;
+    
+    gap: 20px;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line */
+    padding: 80px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px 30px;
+    background-color: #00b8a9;
+  }
+  
+  .word-box-street  {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px; /* Smooth corners */
+    color: white; /* Ensures all text is white */
+    padding: 20px; /* Added padding to create margin inside the boxes */
+  }
+  .box-green-street  {  background: linear-gradient(135deg, #66bb6a, #338a3e); }
+  .box-yellow-street  {
+    background: linear-gradient(135deg, #f9a825, #f57f17);
+  }
+  
+  .box-orange-street  {
+    background: linear-gradient(135deg, #ef6c00, #d84315);
+  }
+  .box-blue-street  {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  }
+  .box-purple-street  {
+    background: linear-gradient(135deg, #ab47bc, #8e24aa);
+  }
+  .box-red-street  {
+    background: linear-gradient(135deg, #ef5350, #d32f2f);
+  }
+  
+
+  
+.promo-street {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+  background-color: #228B22;
+
+  /* Light yellow gradient */
+  color: white;
+}
+
+.promo-street h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.promo-street h2 {
+  font-size: 1em;
+}
+
+.promo-street img {
+  margin: -130px 8px 8px;
+  /* Adjust top margin to move up */
+  z-index: 2;
+  width: 200px;
+  /* Set the desired width */
+  height: 200px;
+}
+
+.get-back-home {
+  background-color: yellow;
+  color: green;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.get-back-home:hover {
+  background-color: #2E8B57;
+  color: white;
+}
+
+
+
+.main-container {
+  display: flex; /* Use flexbox to align children in a row */
+  justify-content: space-between; /* Space out the child divs evenly */
+  padding: 20px; /* Padding around the main container */
+  width: 100%;
+  /* Set the width to 100% */
+  max-width: 100%;
+  background: linear-gradient(135deg, #fff9c4, #fff59d); /* Light yellow gradient */
+}
+.navigation-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.nav-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px; /* Add spacing between items */
+}
+
+.nav-list li {
+  margin: 5px 0;
+  text-align: left; /* Align text to the left */
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.nav-list a:hover {
+  color: #007BFF;
+}
+.street-contact-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the columns evenly */
+  width: 45%; /* Width of the container */
+  padding: 20px; /* Add some padding */
+}
+
+.street-contact-container h2 {
+  text-align: center; /* Center the heading */
+  color: #333; /* Dark color for the heading */
+  width: 100%; /* Ensure the heading takes full width */
+  margin-top: 0px;
+  color: green;
+  
+}
+
+.street-left-contact-column{
+  flex: 1; /* Each column takes equal space */
+  height: 30vh;
+  margin-top: 60px;
+  width: 80%;
+  margin-left: -500px;
+  align-items: left;
+}
+.street-right-contact-column {
+  flex: 1; /* Each column takes equal space */
+
+  height: 30vh;
+  margin-top: 60px;
+  width: 80%;
+  align-items: left;
+  
+}
+
+.street-left-contact-column p,
+.street-right-contact-column p {
+  color: black; /* Text color for paragraphs */
+  text-align: left;
+}
+
+.street-contact-column p {
+  color: #555; /* Dark gray text color */
+}
+
+.street-contact-column a {
+  color: #4CAF50; /* Green color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.street-contact-column a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+.social-containerr {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  background-color: none; /* Light background color for contrast */
+  padding-right: 40px;
+  
+}
+
+.social-linkk p {
+  font-size: 24px; /* Adjust font size as needed */
+  color: #333; /* Dark color for text */
+  font-weight: bold;
+  
+}
+
+.social-linkks {
+  margin-top: 10px; /* Space between the hashtag and icons */
+}
+
+.social-linkks a {
+  margin: 0 10px; /* Space between icons */
+  font-size: 24px; /* Adjust icon size */
+  color: #4CAF50; /* Icon color */
+  text-decoration: none; /* Remove underline */
+}
+
+.social-linkks a:hover {
+  color: #333; /* Change color on hover */
+}
+
+.footer {
+  margin-top: auto; /* Push footer to the bottom of the page */
+  text-align: center; /* Center the text horizontally */
+  padding: 10px 0; /* Add some padding for spacing */
+  color: white; /* Optional: text color */
+  border-top: 1px solid #ccc; /* Optional: top border for separation */
+}

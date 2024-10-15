@@ -26,7 +26,7 @@ const Navbar = () => {
         position: 'absolute', 
         top: '100%', 
         left: '20%', 
-        background: '#228B22',
+        background: '#2E8B57',
 
         padding: '10px 20px', 
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 

@@ -1,0 +1,558 @@
+.street-main-div-street{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    min-height: 100vh;
+    /* Make it take up the full viewport height */
+    width: 100%;
+    /* Make it take up the full viewport width */
+    text-align: center;
+  
+    overflow: hidden;
+    background-color: #228B22;
+}
+
+.containers-street-main {
+    display: flex;
+
+    /* Align text to the left */
+    width: 100%;
+    background-color: #228B22;
+    height: 100%;
+    
+  }
+  
+  .right-div-street-main {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    /* Increase width */
+    height: 100vh;
+    box-sizing: border-box;
+    
+  }
+  
+  
+  .right-div-street-main h1 {
+    font-size: 2em;
+    /* Larger font size for main heading */
+    color: white;
+    /* Green color */
+    font-weight: bold;
+    /* Spacing below */
+    margin-top: 150px;
+    width: 100%;
+    text-align: left;
+    margin-left: 75px;
+    color: yellow;
+  
+  }
+  .right-div-street-main h2 {
+    font-size: 2em;
+    /* Larger font size for main heading */
+    color: white;
+    /* Green color */
+    font-weight: bold;
+    /* Spacing below */
+    margin-top: 1px;
+    width: 100%;
+    text-align: left;
+    margin-left: 75px;
+  
+  }
+  
+  
+  
+  /* Paragraph */
+  .right-div-street-main p {
+    font-size: 1em;
+    color: white;
+    text-align: left;
+    margin-left: 80px;
+  }
+  
+  .get-poa-street-btn-main{
+    background-color: green;
+    color: yellow;
+    padding: 10px 20px; /* Increase padding to make the button larger */
+    font-size: 18px; 
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-left: -180px;
+    box-shadow: 0 0 0 3px white; /* Adds a white outline */
+  }
+  
+  .get-poa-street-btn-main:hover {
+    background-color: #4caf50; /* slightly darker green */
+  
+  }
+  
+  .left-div-street-main {
+    flex: 1;
+    display: flex;            /* Use flexbox for centering */
+      justify-content: center;  /* Center horizontally */
+      align-items: center;      /* Center vertically */
+      position: relative;  
+      margin-top: 80px;
+    
+    width: 50%;
+    
+  }.image-border-main {
+    width: 450px;               /* Width of the border container */
+    height: 450px;              /* Height of the border container */
+    border-radius: 50%;         /* Make the border container circular */
+    display: flex;              /* Center the image within the border */
+    justify-content: center;    /* Center the image horizontally */
+    align-items: center;        /* Center the image vertically */
+    position: relative;         /* For positioning the image */
+    background: conic-gradient(
+        #4caf50 0% 25%,          /* Green V shape */
+        #ffeb3b 25% 50%,         /* Yellow V shape */
+        #800080 50% 75%,         /* Purple V shape */
+        #ff5722 75% 100%         /* Orange V shape */
+    ); /* Create V-shaped pattern without transparency */
+  }
+  
+  .image-border-main img {
+    width: 320px;               /* Set the image width */
+    height: 320px;              /* Set the same height for a circular shape */
+    border-radius: 50%;         /* Make the image circular */
+    object-fit: cover;          /* Ensure the image covers the circular area without distortion */
+  }
+
+  .separator {
+    width: 120%;
+    height: 50px;
+    /* Adjust height as needed */
+    background: repeating-linear-gradient(45deg,
+        #800080,
+        /* Purple */
+        #800080 10px,
+        #FFFF00 10px,
+        /* Yellow */
+        #FFFF00 20px,
+        #4B0082 20px,
+        /* Indigo */
+        #4B0082 30px,
+        #7CFC00 30px,
+        /* Light Green */
+        #7CFC00 40px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Remove any default margins */
+    padding: 0;
+  }
+
+  .conttainere {
+    display: flex;
+    /* Use Flexbox for layout */
+    justify-content: space-between;
+    /* Space between the left and right divs */
+    align-items: flex-start;
+    /* Align items to the top */
+    background-color: #00b8a9;
+  
+    /* Light grey background */
+    padding: 20px;
+    /* Add some padding around the container */
+    width: 100%;
+    /* Set the width to 100% */
+    max-width: 100%;
+    /* Ensure the maximum width is 100% */
+    margin: 0px 30px;
+    /* Set margin on the top and bottom, and left and right */
+    font-size: 16px;
+    /* Adjust font size as necessary */
+    line-height: 2;
+    /* Increase line height for readability */
+    color: white;
+    /* Text color */
+    word-wrap: break-word;
+    /* Allow long words to break */
+  }
+
+  .leftte-div {
+    flex: 1;
+    /* Allow both divs to grow equally */
+    margin-top:  -30px;
+    /* Adjust top margin to move up */
+    padding: 20px;
+    /* Add padding inside each div */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  
+  }
+  
+  
+  .rightte-div {
+    flex: 1;
+    /* Allow both divs to grow equally */
+    margin:  20px 20px;
+    /* Adjust top margin to move up */
+    padding: 20px;
+    /* Add padding inside each div */
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  
+  }
+
+   /* Reduce sizes of h2 and p elements */
+.leftte-div h1,
+.rightte-div h1 {
+  font-size: 2.5em;
+  /* Reduced font size for h2 */
+  font-weight: bold;
+  text-align: left;
+  color: yellow;
+  margin-left: 30px;
+}
+
+  /* Reduce sizes of h2 and p elements */
+.leftte-div h2,
+.rightte-div h2 {
+  font-size: 1.2em;
+  /* Reduced font size for h2 */
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  margin-left: 30px;
+}
+
+.leftte-div p,
+.rightte-div p {
+  font-size: 14px;
+  /* Reduced font size for p */
+  color: white;
+  font-weight: bold;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.rightte-div img {
+    width: 100%; /* Set width to half the container */
+    height: 90vh; /* Maintain aspect ratio */
+    margin-top: -10px;
+  }
+
+  .about-man-container {
+    display: flex;
+    background-image: url(); /* Add your background image URL here */
+    background-size: cover; /* Change to 'contain' if needed */
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+    image-rendering: crisp-edges; /* For sharper display */
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Added position to make ::before work */
+}
+
+.about-man-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(100, 200, 100, 0.8), rgba(34, 139, 34, 0.8));
+    z-index: 1; /* Keep this below the text and above the background image */
+    opacity: 0.5;
+}
+
+  
+  /* Large, bold, italic heading */
+  .mainn-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: white;
+    z-index: 3;
+    padding-top: 50PX;
+  }
+  
+  /* Slightly smaller heading */
+  .subb-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px;
+    color: white;
+    z-index: 3;
+  }
+  
+  /* Text content styling */
+  .mainn-div {
+    
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 3;
+    color: white;
+    font-weight: bold;
+  }
+
+  .container-about-street {
+    display: flex;                 /* Use flexbox for layout */
+    justify-content: space-between; /* Space between left and right divs */
+    align-items: flex-start;       /* Align items at the start of the container */                 /* Add some padding around the container */
+    width: 100%;                    /* Set a width for the container */
+    background-color: #228B22;
+
+    /* Optional background color */
+    
+  }
+
+  .leftt-div-street {
+    flex: 1;
+    width: 70%;                    /* Set each column to take up roughly half the space */
+    height: 50vh;
+    padding-top: 80px;                 /* Add some padding inside each column */
+    
+              
+   
+  }
+  
+  
+  .rightt-div-street {
+    flex: 1;
+    width: 30%;                    /* Set each column to take up roughly half the space */
+    height: 50vh;                
+    padding-top: 80px; 
+   
+  }
+
+  
+  .leftt-div-street h1 {
+    font-size: 2rem;             /* Font size for the main heading */
+    color: white;
+    margin-bottom: 5px;            /* Space below the heading */
+    text-align: left;
+    margin-left: 100px;
+  }
+
+
+  .rightt-div-street h1 {
+    font-size: 2rem;             /* Font size for the main heading */
+    color: white;
+    margin-bottom: 5px;            /* Space below the heading */
+    text-align: left;
+    margin-left: 150px;
+  }
+
+  .leftt-div-street h2 {
+    font-size: 1.4rem;             /* Font size for the subheading */
+    color: white;
+    margin-bottom: 10px;           /* Space below the subheading */
+    text-align: left;
+    margin-left: 100px;
+  }
+  
+  .rightt-div-street h2 {
+    font-size: 1.4rem;             /* Font size for the subheading */
+    color: white;
+    margin-bottom: 10px;           /* Space below the subheading */
+    text-align: left;
+    margin-left: 150px;
+  }
+  
+
+  .leftt-div-street p {
+    font-size: 1rem;             /* Font size for the paragraph */
+    color: white;
+    line-height: 1.5;              /* Line height for better readability */
+    text-align: left;
+    margin-left: 100px;
+  }
+ 
+  .rightt-div-street p {
+    font-size: 1rem;             /* Font size for the paragraph */
+    color: white;
+    line-height: 1.5;              /* Line height for better readability */
+    text-align: left;
+    margin-left: 150px;
+  }
+  
+  
+
+.container-about-street {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    background-color: #00b8a9;
+}
+
+.container-about-street > div:first-child {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.left-about-div-street {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adds spacing between paragraphs */
+    padding: 20px;
+    text-align: left;
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.6; /* Spacing between lines for readability */
+    width: 100%; /* Ensure it takes up the full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-left: 20%;
+    color: white;
+    font-weight: bold;
+}
+
+.about-container-street {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between each row */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-leftt-div-street,
+.about-rightt-div-street {
+    flex: 1;
+    padding: 5px;
+    background-color: #f9f9f9; /* Optional background color */
+    border-radius: 5px; /* Optional rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border: 6px solid yellow; /* Yellow border */
+    border-radius: 10px; /* Optional rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.about-leftt-div-street h1,
+.about-rightt-div-street h1 {
+    font-size: 3em; /* Adjust font size as needed */
+    margin-bottom: 5px;
+    color: #228B22;
+}
+
+.about-leftt-div-street h2,
+.about-rightt-div-street h2 {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 10px;
+    color: #228B22;
+}
+
+.about-leftt-div-street p,
+.about-rightt-div-street p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+ 
+.word-container-street-about {
+    display: flex;
+    
+    gap: 10px;
+    flex-wrap: wrap; /* Allows boxes to wrap to the next line */
+    padding: 40px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0px 30px;
+    background-color: #00b8a9;
+  }
+  
+  .word-box-street-about  {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px; /* Smooth corners */
+    color: white; /* Ensures all text is white */
+    padding: 20px; /* Added padding to create margin inside the boxes */
+  }
+  .box-green-street-about  {  background: linear-gradient(135deg, #66bb6a, #338a3e); }
+  .box-yellow-street-about  {
+    background: linear-gradient(135deg, #f9a825, #f57f17);
+  }
+  
+  .box-orange-street-about  {
+    background: linear-gradient(135deg, #ef6c00, #d84315);
+  }
+  .box-blue-street-about  {
+    background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  }
+  .box-purple-street-about-about  {
+    background: linear-gradient(135deg, #ab47bc, #8e24aa);
+  }
+  .box-red-street-about  {
+    background: linear-gradient(135deg, #ef5350, #d32f2f);
+  }
+
+  .social-containerr-about {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 50vh;
+    margin-top: -30px;
+}
+
+.social-linkk-about p {
+    font-size: 5em; /* Increased size for p element */
+    color: yellow;
+    margin-top: -100px;
+    padding-bottom: 0px; /* Space between text and icons */
+}
+
+.social-linkks-about {
+    display: flex;
+    justify-content: center;
+
+}
+
+.social-linkks-about a {
+    color: green; /* Icon color */
+    font-size: 80px; /* Increased icon size */
+    margin: -60px 10px; /* Space between icons */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-linkks-about a:hover {
+    color: yellow; /* Hover color */
+}
+
+
+
+
+
+
+  
+  
