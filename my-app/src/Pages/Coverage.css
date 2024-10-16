@@ -1,0 +1,302 @@
+.Coverage-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    min-height: 100vh;
+    /* Make it take up the full viewport height */
+    width: 100%;
+    /* Make it take up the full viewport width */
+    text-align: center;
+  
+    overflow: hidden;
+    background-color: #228B22;
+}
+
+
+.containers-coverage-main {
+    display: flex;
+
+    /* Align text to the left */
+    width: 100%;
+    background-color: #228B22;
+    height: 100%;
+    
+  }
+  
+  .right-div-coveragee-main {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    /* Increase width */
+    height: 120vh;
+    box-sizing: border-box;
+    margin-top: 50px;
+    
+  }
+  
+  
+  .right-div-coveragee-main h1 {
+    font-size: 2em;
+    /* Larger font size for main heading */
+    color: white;
+    /* Green color */
+    font-weight: bold;
+    /* Spacing below */
+    margin-top: 150px;
+    width: 100%;
+    text-align: left;
+    margin-left: 75px;
+    color: yellow;
+  
+  }
+  .right-div-coveragee-main h2 {
+    font-size: 2em;
+    /* Larger font size for main heading */
+    color: white;
+    /* Green color */
+    font-weight: bold;
+    /* Spacing below */
+    margin-top: 1px;
+    width: 100%;
+    text-align: left;
+    margin-left: 75px;
+  
+  }
+  
+  
+  
+  /* Paragraph */
+  .right-div-coveragee-main p {
+    font-size: 1em;
+    color: white;
+    text-align: left;
+    margin-left: 80px;
+  }
+  
+  .get-poa-coverage-btn-main{
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* Increase padding to make the button larger */
+    font-size: 18px; 
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-left: -180px;
+    box-shadow: 0 0 0 3px green; /* Adds a white outline */
+  }
+  
+  .get-poa-coverage-btn-main:hover {
+    background-color:  green; /* slightly darker green */
+    color: white;
+  
+  }
+  
+  .left-div-coverage-main {
+    flex: 1;
+    display: flex;            /* Use flexbox for centering */
+      justify-content: center;  /* Center horizontally */
+      align-items: center;      /* Center vertically */
+      position: relative;  
+      margin-top: 3%;
+
+    
+    width: 50%;
+    
+  }.image-border-main {
+    width: 450px;               /* Width of the border container */
+    height: 450px;              /* Height of the border container */
+    border-radius: 50%;         /* Make the border container circular */
+    display: flex;              /* Center the image within the border */
+    justify-content: center;    /* Center the image horizontally */
+    align-items: center;        /* Center the image vertically */
+    position: relative;         /* For positioning the image */
+    background: conic-gradient(
+        #4caf50 0% 25%,          /* Green V shape */
+        #ffeb3b 25% 50%,         /* Yellow V shape */
+        #800080 50% 75%,         /* Purple V shape */
+        #ff5722 75% 100%         /* Orange V shape */
+    ); /* Create V-shaped pattern without transparency */
+  }
+  
+  .image-border-main img {
+    width: 320px;               /* Set the image width */
+    height: 320px;              /* Set the same height for a circular shape */
+    border-radius: 50%;         /* Make the image circular */
+    object-fit: cover;          /* Ensure the image covers the circular area without distortion */
+    padding: auto;
+  }
+
+  .separator {
+    width: 120%;
+    height: 50px;
+    /* Adjust height as needed */
+    background: repeating-linear-gradient(45deg,
+        #800080,
+        /* Purple */
+        #800080 10px,
+        #FFFF00 10px,
+        /* Yellow */
+        #FFFF00 20px,
+        #4B0082 20px,
+        /* Indigo */
+        #4B0082 30px,
+        #7CFC00 30px,
+        /* Light Green */
+        #7CFC00 40px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Remove any default margins */
+    padding: 0;
+  }
+
+  .conttainere {
+    display: flex;
+    /* Use Flexbox for layout */
+    justify-content: space-between;
+    /* Space between the left and right divs */
+    align-items: flex-start;
+    /* Align items to the top */
+    background-color: white;
+  
+    /* Light grey background */
+    padding: 20px;
+    /* Add some padding around the container */
+    width: 100%;
+    /* Set the width to 100% */
+    max-width: 100%;
+    /* Ensure the maximum width is 100% */
+    margin: 0px 30px;
+    /* Set margin on the top and bottom, and left and right */
+    font-size: 16px;
+    /* Adjust font size as necessary */
+    line-height: 2;
+    /* Increase line height for readability */
+    color: white;
+    /* Text color */
+    word-wrap: break-word;
+    /* Allow long words to break */
+  }
+
+  .leftte-div {
+    flex: 1;
+   
+    padding: 10px;
+    padding-top: 10%;
+    /* Add padding inside each div */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  
+  }
+  
+  
+  .rightte-div {
+    flex: 1;
+    /* Allow both divs to grow equally */
+    margin:  20px 20px;
+    /* Adjust top margin to move up */
+    padding: 20px;
+    /* Add padding inside each div */
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  
+  }
+
+   /* Reduce sizes of h2 and p elements */
+.leftte-div h1,
+.rightte-div h1 {
+  font-size:50px;
+  /* Reduced font size for h2 */
+  font-weight: bold;
+  text-align: left;
+  color: green;
+  margin-left: 10%;
+}
+
+ 
+
+.rightte-div img {
+    width: 100%; /* Set width to half the container */
+    height: 60vh; /* Maintain aspect ratio */
+    margin-top: -10px;
+  }
+
+
+  .get-poa-coverage-btn-main-map{
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* Increase padding to make the button larger */
+    font-size: 18px; 
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-left: -180px;
+    box-shadow: 0 0 0 3px yellow; /* Adds a white outline */
+  }
+  
+  .get-poa-coverage-btn-main-map:hover {
+    background-color: green; /* slightly darker green */
+    color: white;
+  
+  }
+
+  .leftte-div-malindi {
+    flex: 1;
+   
+    padding: 10px;
+    padding-top: 1%;
+    /* Add padding inside each div */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  
+  }
+  
+  
+  .rightte-div-malindi {
+    flex: 1;
+    /* Allow both divs to grow equally */
+    margin:  20px 20px;
+    /* Adjust top margin to move up */
+    padding: 20px;
+    /* Add padding inside each div */
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding-top: 5%;
+  
+  }
+
+   /* Reduce sizes of h2 and p elements */
+.leftte-div-malindi h1,
+.rightte-div h1 {
+  font-size:50px;
+  /* Reduced font size for h2 */
+  font-weight: bold;
+  text-align: left;
+  color: green;
+  margin-left: 10%;
+}
+
+ 
+
+.rightte-div-malindi img {
+    width: 100%; /* Set width to half the container */
+    height: 60vh; /* Maintain aspect ratio */
+    margin-top: -10px;
+  }

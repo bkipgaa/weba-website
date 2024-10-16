@@ -102,7 +102,7 @@ const LoginSignup = () => {
 </form>
 
       <p onClick={() => setIsLogin(!isLogin)}>
-        {isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login"}
+        {isLogin ? "Not a yet a customer, Get Your Subscription today? Sign Up" : "Already a customer? Enter your detaits Above Login"}
       </p>
     </div>
   );

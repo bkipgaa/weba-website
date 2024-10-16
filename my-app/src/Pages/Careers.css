@@ -1,0 +1,126 @@
+.Careers-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    height: 100%;
+    /* Make it take up the full viewport height */
+    width: 100%;
+    /* Make it take up the full viewport width */
+    text-align: center;
+  
+    overflow: hidden;
+    background-color: #228B22;
+}
+
+.careers-poa-container {
+    display: flex;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Ensures the image does not repeat */
+    background-attachment: fixed;
+    /* Keeps image fixed during scroll */
+    z-index: 1;
+    image-rendering: crisp-edges;
+    /* For sharper display */
+    height: 100%;
+    padding: 80px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    padding-left: 80px;
+    width: 100%;
+  }
+  
+  .careers-poa-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 128, 128, 0.8), rgba(0, 100, 0, 0.8));
+ z-index: 0;
+    opacity: 0.9;
+  }
+  
+  /* Large, bold, italic heading */
+  .main-heading-careers {
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: yellow;
+    z-index: 3;
+    margin-top: 0%;
+  }
+  
+  /* Slightly smaller heading */
+  .sub-heading-careers {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 10px;
+    color: white;
+    z-index: 3;
+  }
+  
+  /* Text content styling */
+  .description-careers {
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 3;
+    color: white;
+  }
+  
+  .separator {
+    width: 120%;
+    height: 50px;
+    /* Adjust height as needed */
+    background: repeating-linear-gradient(45deg,
+        #800080,
+        /* Purple */
+        #800080 10px,
+        #FFFF00 10px,
+        /* Yellow */
+        #FFFF00 20px,
+        #4B0082 20px,
+        /* Indigo */
+        #4B0082 30px,
+        #7CFC00 30px,
+        /* Light Green */
+        #7CFC00 40px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Remove any default margins */
+    padding: 0;
+  }
+
+  .careers-weba{
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /* Increase padding to make the button larger */
+    font-size: 18px; 
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-left: -5%;
+    box-shadow: 0 0 0 3px yellow; /* Adds a white outline */
+    z-index: 3;
+  }
+  
+  .careers-weba:hover {
+    background-color: green; /* slightly darker green */
+    color: white;
+  
+  }

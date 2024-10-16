@@ -9,6 +9,7 @@ import Coverage from './Pages/Coverage'
 import Careers from './Pages/Careers'
 import Internet_Status from './Pages/Internet_Status';
 import Poa_Home from './Pages/PoaHome/Poa_Home';
+import Share_Location from './Pages/ShareLocation/ShareLocation';
 // Import the Font Awesome CSS
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/poa-home" element={<Poa_Home />} />
+        <Route path='coverage/share-location' element={<Share_Location />}/>
     <Route path="/selfcare" element={<LoginSignup/>} />
     </Routes>
     

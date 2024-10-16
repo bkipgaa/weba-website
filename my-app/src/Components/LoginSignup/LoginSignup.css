@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px; /* Adjust according to the navbar size */
+    background-color: #228B22;
+    height: 100vh;
   }
   
   .auth-container h2 {
     margin-bottom: 20px;
+    margin-top: 15%; /* Adjust according to the navbar size */
   }
   
   .auth-container form {
@@ -18,14 +20,15 @@
   .auth-container form input {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    
   }
   
   .auth-container form button {
     padding: 10px;
-    background-color: #6a11cb;
-    color: white;
+    background-color: yellow;
+    color: green;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -33,7 +36,7 @@
   }
   
   .auth-container p {
-    color: #6a11cb;
+    color: white;
     cursor: pointer;
     margin-top: 10px;
   }
