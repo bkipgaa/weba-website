@@ -31,24 +31,77 @@ app.listen(port, (error) => {
 
 // Schema Creation for User model
 const Users = mongoose.model('Users', {
-    name: {
-        type: String,
-    },
-    email: {
-        type: String,
-        unique: true,
-    },
-    password: {
-        type: String,
-    },
-    cartData: {    //type of data you want to be associated with user ie invoice
-        type: Object,
-    },
-    date: {
-        type: Date,
-        default: Date.now,
-    }
+  name: {
+      type: String,
+      required: true,   // Name is required
+  },
+  email: {
+      type: String,
+      unique: true,
+      required: true,   // Email is required
+  },
+  password: {
+      type: String,
+      required: true,   // Password is required
+  },
+  phoneNumber: {
+      type: String,    // Adding phone number field
+      required: true   // Phone number is required
+  },
+  location: {
+      type: String,    // Adding location field
+      required: true   // Location is required
+  },
+  additionalInfo: {
+      type: String,    // Field to capture additional information
+  },
+  heardFrom: {
+      type: String,    // How the user heard about the service
+      enum: ['facebook', 'twitter', 'tiktok', 'searchEngines', 'friend', 'referrals'], // Predefined options
+      required: true   // Field is required
+  },
+  cartData: {
+      type: Object,    // Assuming this is related to invoices or user-specific data
+  },
+  date: {
+      type: Date,
+      default: Date.now,
+  }
 });
+
+const UserLocationSchema = new mongoose.Schema({
+  latitude: {
+      type: Number,
+      required: true, // Ensure latitude is provided
+  },
+  longitude: {
+      type: Number,
+      required: true, // Ensure longitude is provided
+  },
+  userId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Users', // Reference to the Users model for better data integrity
+      required: true, // Ensure userId is provided
+  },
+  date: {
+      type: Date,
+      default: Date.now,
+  },
+  name: {
+    type: String,  // Store user's name
+  },
+  email: {
+    type: String,  // Store user's email
+  },
+  phoneNumber: {
+    type: String,  // Store user's phone number
+  },
+});
+
+// Create the model
+const UserLocation = mongoose.model('UserLocation', UserLocationSchema);
+
+module.exports = UserLocation;
 
 //API Endpoint for registering users
 
@@ -60,10 +113,15 @@ app.post('/signup', async (req, res) => {
     }
     // Create a new user with the provided information and initialized cart
     const user = new Users({
-        name: req.body.username,
-        email: req.body.email,
-        password: req.body.password
-    });
+      name: req.body.username,
+      email: req.body.email,
+      password: req.body.password,
+      phoneNumber: req.body.phoneNumber,   // Capture phone number
+      location: req.body.location,         // Capture location
+      additionalInfo: req.body.additionalInfo,  // Capture additional information (optional)
+      heardFrom: req.body.heardFrom        // Capture how the user heard about the service
+  });
+  
     await user.save()
     // Create a token with the user's ID
     const data = {
@@ -146,7 +204,55 @@ app.get('/scan-network', async (req, res) => {
         res.status(500).send('Error processing network scan');
     }
 });
- 
+
+
+
+// API route to handle location submission
+// Middleware to authenticate the user and extract user ID
+const authenticateToken = (req, res, next) => {
+  const token = req.header('auth-token'); // Extract token from request headers
+  if (!token) return res.status(401).json({ success: false, message: "Access Denied. No token provided." });
+
+  try {
+    const verified = jwt.verify(token, 'secret_ecom');  // Verify token with your secret
+    req.user = verified.user; // Attach user data to request object
+    next(); // Proceed to the next middleware
+  } catch (err) {
+    res.status(400).json({ success: false, message: "Invalid Token" });
+  }
+};
+
+// API route to handle location submission
+app.post('/api/location', authenticateToken, async (req, res) => {
+  const { latitude, longitude } = req.body;
+
+  if (!latitude || !longitude) {
+    return res.status(400).json({ success: false, message: 'Latitude and longitude are required' });
+  }
+
+  try {
+    // Fetch the logged-in user's details using their ID from the token
+    const user = await Users.findById(req.user.id);  // Assuming req.user.id contains the userId
+
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+    const newLocation = new UserLocation({
+      latitude,
+      longitude,
+      userId: user._id,  // User's ID
+      name: user.name,  // User's name
+      email: user.email,  // User's email
+      phoneNumber: user.phoneNumber,  // User's phone number
+    });
+
+    await newLocation.save();
+    res.json({ success: true, message: 'Location saved successfully!' });
+  } catch (error) {
+    console.error('Error saving location:', error);
+    res.status(500).json({ success: false, message: 'Failed to save location.' });
+  }
+});
 
   
   

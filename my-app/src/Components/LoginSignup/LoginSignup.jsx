@@ -9,6 +9,10 @@ const LoginSignup = () => {
     username: "", // Username field, only used in the signup form
     password: "", // Password field
     email: "", // Email field
+    phoneNumber: "", // Phone number field
+    location: "", // Location field
+    additionalInfo: "", // Additional information field
+    heardFrom: "" // How did you hear about us field
   })
 
   // Handler function to update form data state when input fields change
@@ -70,32 +74,110 @@ const LoginSignup = () => {
     <div className="auth-container">
       <h2>{isLogin ? 'Login' : 'Sign Up'}</h2>
       <form>
+  {/* Only show the username field, location, select, phone number when signing up */}
+  {/* Signup Form Fields */}
   {!isLogin && (
-    <input
-      name="username"
-      value={formData.username}
-      onChange={changeHandler}
-      type="text"
-      placeholder="Your Name"
-      autoComplete="username"  
-    />
-  )}
-  <input
-    name="email"
-    value={formData.email}
-    onChange={changeHandler}
-    type="email"
-    placeholder="Email"
-    autoComplete="email"  
-  />
-  <input
-    name="password"
-    value={formData.password}
-    onChange={changeHandler}
-    type="password"
-    placeholder="Password"
-    autoComplete={isLogin ? "current-password" : "new-password"}  
-  />
+          <>
+            {/* Username */}
+            <input
+              name="username"
+              value={formData.username}
+              onChange={changeHandler}
+              type="text"
+              placeholder="Your Name"
+              autoComplete="username"
+            />
+
+            {/* Phone Number */}
+            <input
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={changeHandler}
+              type="tel"
+              placeholder="Phone Number"
+              autoComplete="tel"
+            />
+
+            {/* Email */}
+            <input
+              name="email"
+              value={formData.email}
+              onChange={changeHandler}
+              type="email"
+              placeholder="Email"
+              autoComplete="email"
+            />
+
+            {/* Password */}
+            <input
+              name="password"
+              value={formData.password}
+              onChange={changeHandler}
+              type="password"
+              placeholder="Password"
+              autoComplete="new-password"
+            />
+
+            {/* Location */}
+            <input
+              name="location"
+              value={formData.location}
+              onChange={changeHandler}
+              type="text"
+              placeholder="Location"
+              autoComplete="address-level1"
+            />
+             {/* Additional Information */}
+             <textarea
+              name="additionalInfo"
+              value={formData.additionalInfo}
+              onChange={changeHandler}
+              placeholder="Additional Information (optional)"
+            ></textarea>
+
+            {/* How did you hear about us */}
+            <select
+              name="heardFrom"
+              value={formData.heardFrom}
+              onChange={changeHandler}
+            >
+              <option value="" disabled>How did you hear about us?</option>
+              <option value="facebook">Facebook</option>
+              <option value="twitter">Twitter</option>
+              <option value="tiktok">TikTok</option>
+              <option value="searchEngines">Search Engines</option>
+              <option value="friend">From a Friend</option>
+              <option value="referrals">Referrals</option>
+            </select>
+
+           
+          </>
+        )}
+
+        {/* Login Form Fields (only Email and Password) */}
+        {isLogin && (
+          <>
+            {/* Email */}
+            <input
+              name="email"
+              value={formData.email}
+              onChange={changeHandler}
+              type="email"
+              placeholder="Email"
+              autoComplete="email"
+            />
+
+            {/* Password */}
+            <input
+              name="password"
+              value={formData.password}
+              onChange={changeHandler}
+              type="password"
+              placeholder="Password"
+              autoComplete="current-password"
+            />
+          </>
+        )}
   <button type="button" onClick={() => { isLogin ? login() : signup() }}>
     {isLogin ? 'Login' : 'Sign Up'}
   </button>
