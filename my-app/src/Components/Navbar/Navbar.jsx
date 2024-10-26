@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import logo from '../Assets/logo.png';
 import './Navbar.css';
 import { Link } from 'react-router-dom'; // Assuming you are using React Router
+import Profile from '../ProfileDisplay/ProductDisplay'
 
 
-const Navbar = () => {
+
+const Navbar = (user, handleLogout, updateUser) => {
   const [menu, setMenu] = useState('home')
   return (
     <div className='nav-container'>
@@ -93,6 +95,8 @@ const Navbar = () => {
   <Link style={{ textDecoration: 'none' }} to='/selfcare'>Selfcare</Link>
   {menu === "selfcare" ? <hr /> : null}
 </li>
+
+{user && <Profile user={user} handleLogout={handleLogout} />}
 
          
         </ul>

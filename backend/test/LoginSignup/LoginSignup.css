@@ -1,0 +1,140 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #228B22;
+    height: auto;
+    padding: auto;
+  }
+  
+  .auth-container h2 {
+    margin-bottom: 20px;
+    margin-top: 10%; /* Adjust according to the navbar size */
+  }
+  
+  .auth-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .auth-container form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  
+  .auth-container form button {
+    padding: 10px;
+    background-color: yellow;
+    color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .auth-container p {
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+
+  /* Style for select element */
+.auth-container select {
+  appearance: none;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  padding: 12px;
+}
+
+.auth-container select:hover {
+  border-color: #007bff;
+}
+
+.auth-container select option {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for textarea */
+.auth-container textarea {
+  height: 120px; /* Make it larger */
+  resize: vertical; /* Allow vertical resizing */
+  margin-bottom: 15px;
+  border: 3px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-profile {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: red;
+}
+
+.user-profile span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: purple;
+}
+
+.user-profile button {
+  background-color: #007bff;
+  color: orange;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  z-index: 3;
+}
+
+.user-profile button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h2 {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

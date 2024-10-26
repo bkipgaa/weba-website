@@ -1,0 +1,362 @@
+.Dashboard-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    min-height: 100vh;
+    /* Make it take up the full viewport height */
+    width: 100vw;
+    /* Make it take up the full viewport width */
+    text-align: center;
+  
+    overflow: hidden;
+    background-color: #228B22;
+  
+  
+    /* Green gradient background */
+  
+  }
+
+  
+.separator {
+    width: 120%;
+    height: 50px;
+    /* Adjust height as needed */
+    background: repeating-linear-gradient(45deg,
+        #800080,
+        /* Purple */
+        #800080 10px,
+        #FFFF00 10px,
+        /* Yellow */
+        #FFFF00 20px,
+        #4B0082 20px,
+        /* Indigo */
+        #4B0082 30px,
+        #7CFC00 30px,
+        /* Light Green */
+        #7CFC00 40px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Remove any default margins */
+    padding: 0;
+  }
+  
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    width: 100%;
+    background-color: #00b8a9;
+  
+    /* Light yellow gradient */
+    color: white;
+  }
+  
+  .promo h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .promo h2 {
+    font-size: 1.2em;
+  }
+  
+  .promo img {
+    margin: -150px 8px 8px;
+    /* Adjust top margin to move up */
+    z-index: 2;
+    width: 200px;
+    /* Set the desired width */
+    height: 200px;
+  }
+  
+  .containers {
+    display: flex;
+    /* Set flex layout */
+    
+  
+    text-align: left;
+    /* Align text to the left */
+    width: 100%;
+    /* Full width of the parent */
+  }
+  
+  .left-div {
+    flex: 1;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    width: 50%;
+    /* Increase width */
+    height: 100vh;
+    box-sizing: border-box;
+    /* Ensures padding doesn’t affect width */
+  }
+  
+  .right-divv {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+  
+  }
+  
+  .left-div h1 {
+    font-size: 3em;
+    /* Larger font size for main heading */
+    color: white;
+    /* Green color */
+    font-weight: bold;
+    /* Bold text */
+    margin-bottom: 10px;
+    /* Spacing below */
+    padding-top: 40px;
+    text-align: center;
+    /* Centers subheading */
+    width: 50%;
+    margin-left: 190px;
+    /* Shift entire container to the right */
+  
+  }
+  
+  .left-div h2 {
+    font-size: 1.3em;
+    /* Larger font size for main heading */
+    color: white;
+    /* Green color */
+    font-weight: bold;
+    /* Bold text */
+    margin-bottom: 40px;
+    /* Spacing below */
+    padding-top: 20px;
+    text-align: left;
+    /* Centers subheading */
+    margin-left: 220px;
+    /* Shift entire container to the right */
+  
+  }
+  
+  /* Subheading */
+  .right-divv h2 {
+    font-size: 1em;
+    /* Slightly smaller than the main heading */
+    color: white;
+    /* Darker color for contrast */
+  
+  
+  }
+  
+  /* Paragraph */
+  .left-div p {
+    font-size: 0.9em;
+    /* Regular paragraph font size */
+    color: #555;
+    /* Softer color for easier reading */
+    line-height: 2;
+    /* Increases readability */
+    margin-left: 220px;
+    /* Shift entire container to the right */
+    text-align: left;
+    /* Align text to the left */
+    color: white;
+  }
+  
+  .get-poa-home-btn {
+    background-color: yellow;
+    color: green;
+    padding: 15px 30px; /* Increase padding to make the button larger */
+    font-size: 18px; 
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+  }
+  
+  .get-poa-home-btn:hover {
+    background-color: #e6e600; /* Slightly darker yellow on hover */
+  }
+  
+  .conttainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 0px;
+    /* Adjusts spacing between the heading and the boxes */
+    margin-bottom: 20px;
+  
+  }
+  
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    width: 420px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box.weeklly {
+    background-color: #ff5a19;
+    margin-left: 80px;
+  
+  }
+  
+  .box.saverr {
+    background-color: #00b8a9;
+    margin-left: 80px;
+  
+  
+  }
+  
+  .box.monthly {
+    background-color: #f752a0;
+    margin-left: 80px;
+  
+  }
+  
+  .label {
+    font-size: 2em;
+  
+  }
+  
+  .descriptionn {
+    font-size: 1.2em;
+    color: #f1d502;
+    text-align: left;
+  }
+  
+  .containers-street {
+    display: flex;
+    /* Set flex layout */
+    text-align: left;
+    /* Align text to the left */
+    width: 100%;
+    background-color: #00b8a9;
+    
+    
+  }
+  
+  .right-div-street {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    /* Increase width */
+    height: 100vh;
+    box-sizing: border-box;
+    /* Ensures padding doesn’t affect width */
+    margin-bottom: 60px;
+  }
+  
+  
+  .right-div-street h1 {
+    font-size: 3em;
+    /* Larger font size for main heading */
+    color: white;
+    /* Green color */
+    font-weight: bold;
+    /* Bold text */
+    margin-bottom: 10px;
+    /* Spacing below */
+    padding-top: 40px;
+    text-align: left;
+    /* Centers subheading */
+    width: 50%;
+  
+  }
+  
+  .right-div-street h2 {
+    font-size: 1.3em;
+    /* Larger font size for main heading */
+    color: white;
+    /* Green color */
+    font-weight: bold;
+    /* Bold text */
+    margin-bottom: 40px;
+    /* Spacing below */
+    padding-top: 20px;
+    text-align: left;
+   
+  }
+  
+  /* Paragraph */
+  .right-div-street p {
+    font-size: 0.9em;
+    
+    /* Softer color for easier reading */
+    line-height: 2;
+    text-align: left;
+    /* Align text to the left */
+    color: white;
+  }
+  
+  .get-poa-street-btn {
+    background-color: green;
+    color: yellow;
+    padding: 10px 20px; /* Increase padding to make the button larger */
+    font-size: 18px; 
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: left;
+    margin-left: -500px;
+  }
+  
+  .get-poa-street-btn:hover {
+    background-color: #4caf50; /* slightly darker green */
+  
+  }
+  
+  .left-div-street {
+    flex: 1;
+    display: flex;            /* Use flexbox for centering */
+      justify-content: center;  /* Center horizontally */
+      align-items: center;      /* Center vertically */
+      position: relative;  
+    
+    width: 50%;
+    
+  }.image-border {
+    width: 400px;               /* Width of the border container */
+    height: 400px;              /* Height of the border container */
+    border-radius: 50%;         /* Make the border container circular */
+    display: flex;              /* Center the image within the border */
+    justify-content: center;    /* Center the image horizontally */
+    align-items: center;        /* Center the image vertically */
+    position: relative;         /* For positioning the image */
+    background: conic-gradient(
+        #4caf50 0% 25%,          /* Green V shape */
+        #ffeb3b 25% 50%,         /* Yellow V shape */
+        #800080 50% 75%,         /* Purple V shape */
+        #ff5722 75% 100%         /* Orange V shape */
+    ); /* Create V-shaped pattern without transparency */
+  }
+  
+  .image-border img {
+    width: 300px;               /* Set the image width */
+    height: 300px;              /* Set the same height for a circular shape */
+    border-radius: 50%;         /* Make the image circular */
+    object-fit: cover;          /* Ensure the image covers the circular area without distortion */
+  }
